@@ -19,10 +19,9 @@ h1 {
 .pokedex {
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-	grid-gap: 20px;
+	grid-gap: 10px;
 	padding-inline-start: 0;
 }
-
 .card {
 	list-style: none;
 	padding: 40px;
@@ -31,7 +30,6 @@ h1 {
 	border-radius: 20px;
 	position: relative;
 }
-
 .card::after {
 	content: "";
   display: block;
@@ -44,47 +42,22 @@ h1 {
   top: 15%;
   left: 25%;
 }
-
-
-.card:hover {
-	animation: bounce 0.5s linear;
-}
-
 .card-title {
 	text-transform: capitalize;
 	margin-bottom: 0px;
 	font-size: 32px;
-	font-weight: normal;
 	position: relative;
 	z-index: 2;
 }
-
 .card-subtitle {
 	margin-top: 5px;
-	color: #666;
-	font-weight: lighter;
+	color: #1d1616;
 	position: relative;
 	z-index: 2;
 }
-
 .card-image {
 	height: 180px;
 	position: relative;
 	z-index: 2;
 }
 
-@keyframes bounce {
-	20% {
-			transform: translateY(-6px);
-	}
-	40% {
-			transform: translateY(0px);
-	}
-
-	80% {
-			transform: translateY(-2px);
-	}
-	100% {
-			transform: translateY(0);
-	}
-}
